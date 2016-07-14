@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#589be1"
+        >
+        <ImageView
+            android:id="@+id/tool_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right_normal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            />
+        <ImageView
+            android:id="@+id/tool_login_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo_b"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/tool_return"/>
+        <TextView
+            android:id="@+id/tool_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:text="@string/exrate"
+            android:textSize="17sp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tool_login_iv"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/one_re"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+        <ImageView
+            android:id="@+id/country_iv_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/cambodia"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/en_name_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SGD"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/country_iv_one"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/country_exrate_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0.00"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/country_iv_one"/>
+        <TextView
+            android:id="@+id/country_zh_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/country_exrate_number"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+            android:layout_alignBottom="@+id/country_iv_one"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/two_re"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/one_re"
+        android:layout_marginTop="5dp">
+        <ImageView
+            android:id="@+id/country_iv_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/china"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/en_name_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CNY"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/country_iv_two"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/country_exrate_number_zh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0.00"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/country_iv_two"/>
+        <TextView
+            android:id="@+id/country_zh_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/country_exrate_number_zh"
+            android:text="@string/RMB"
+            android:textColor="#000000"
+            android:layout_marginRight="10dp"
+            android:layout_alignBottom="@+id/country_iv_two"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/three_re"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/two_re"
+        android:layout_marginTop="5dp">
+        <ImageView
+            android:id="@+id/country_iv_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/unitedstates"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/en_name_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USD"
+            android:layout_toRightOf="@id/country_iv_three"
+            android:layout_marginLeft="8dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/country_exrate_number_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0.00"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/country_iv_three"/>
+        <TextView
+            android:id="@+id/country_zh_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/country_exrate_number_us"
+            android:text="@string/dollar"
+            android:textColor="#000000"
+            android:layout_marginRight="10dp"
+            android:layout_alignBottom="@+id/country_iv_three"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/four_re"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/three_re"
+        android:layout_marginTop="5dp">
+        <ImageView
+            android:id="@+id/country_iv_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/unitedkingdom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/en_name_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EUR"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@id/country_iv_four"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/country_exrate_number_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0.00"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/country_iv_four"/>
+        <TextView
+            android:id="@+id/country_zh_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/country_exrate_number_en"
+            android:text="@string/eucoin"
+            android:textColor="#000000"
+            android:layout_marginRight="10dp"
+            android:layout_alignBottom="@+id/country_iv_four"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    <LinearLayout
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/key_1_iv"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="1"
+            android:gravity="center"
+            android:background="#f21212"
+             />
+
+        <Button
+            android:id="@+id/key_2_iv"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="2"
+            android:background="#f2be12"
+            android:gravity="center"
+             />
+
+        <Button
+            android:id="@+id/key_3_iv"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="3"
+            android:background="#f2e712"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/one">
+
+            <Button
+                android:id="@+id/key_4_iv"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="4"
+                android:background="#1df212"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/key_5_iv"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="5"
+                android:background="#1216f2"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/key_6_iv"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="6"
+                android:background="#ab12f2"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/two">
+
+            <Button
+                android:id="@+id/key_7_iv"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="7"
+                android:background="#b612f2"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/key_8_iv"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="8"
+                android:background="#f212b3"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/key_9_iv"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="9"
+                android:background="#f2128d"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/three">
+
+            <Button
+                android:id="@+id/key_point_iv"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="."
+                android:background="#12e7f2"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/key_0_iv"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:background="#b3f212"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/key_del_iv"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="DEL"
+                android:background="#12f2ba"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

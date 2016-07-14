@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ChanYouJi</string>
+    <string name="exrate">实时汇率</string>
+    <string name="RMB">人民币</string>
+    <string name="dollar">美元</string>
+    <string name="eucoin">欧元</string>
+    <string name="_0">0篇游记</string>
+    <string name="lingting">聆听</string>
+    <string name="my_travel">我的旅行</string>
+    <string name="map">旅行地图</string>
+    <string name="math">旅行记账</string>
+    <string name="voice">语音翻译</string>
+    <string name="time">当地时间 :</string>
+    <string name="excate">实时汇率</string>
+    <string name="email">电子邮箱</string>
+    <string name="password">密码</string>
+    <string name="load">登录</string>
+    <string name="register_email">电子邮箱</string>
+    <string name="strategy">攻略</string>
+    <string name="travel_place">旅行地</string>
+    <string name="topic">专题</string>
+    <string name="recent_look">最近浏览</string>
+    <string name="outline_see">离线浏览</string>
+    <string name="set">设置</string>
+    <string name="exit_load">退出登录</string>
+    <string name="loadmore">加载更多...</string>
+    <string name="map_mode">地图模式</string>
+    <string name="joueney">行程概览</string>
+    <string name="personal_message">私信</string>
+    <string name="notice">+ 关注他</string>
+    <string name="last_time">最后刷新时间: 2014-10-10 12:56:12</string>
+    <string name="update">下拉刷新</string>
+    <string name="Route">行程</string>
+    <string name="china">中国</string>
+</resources>
